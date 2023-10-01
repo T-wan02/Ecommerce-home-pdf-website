@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Cart</title>
+
+     <!-- Css Link -->
+     <link rel="stylesheet" href="./style/index.css">
+     <link rel="stylesheet" href="./style/cart.css">
+     <link rel="stylesheet" href="./style/form.css">
+
+     <!-- Google Font Link -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;500;700&family=Noto+Sans:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+
+     <!-- Animate css link -->
+     <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+     />
+</head>
+<body>
+     
+     <nav>
+          <a href="#" style="color: var(--primary-color); text-decoration: none;"><h2>Ecommerce PDF Website</h2></a>
+     </nav>
+
+     <section class="cart-container d-flex gap-1">
+          <div class="left information-container d-flex flex-column gap-2">
+               <div class="email-info information">
+                    <div class="process-container active">
+                         <div class="circle">1</div>
+                         <div class="process"></div>
+                    </div>
+                    <form class="email-form" action="#">
+                         <h2 class="form-header">Your Email</h2>
+                         <input type="email" placeholder="example@gmail.com" class="email form-control" id="email_header">
+                         <input type="submit" class="fill_btn w-100" value="Submit">
+                    </form>
+               </div>
+               <div class="payment-info information">
+                    <div class="process-container in_process">
+                         <div class="circle">2</div>
+                         <div class="process"></div>
+                    </div>
+                    <form action="#" class="payment-form disabled">
+                         <h2 class="form-header">Payment</h2>
+                         <header>Billing Address</header>
+                         <div class="form-input-container">
+                              <div class="form-group d-flex gap-1 gap-md-1 row-md-col">
+                                   <input type="text" class="form-control" placeholder="First Name" name="fName">
+                                   <input type="text" class="form-control" placeholder="Last Name" name="lName">
+                              </div>
+                              <input type="text" class="form-control w-100" placeholder="Address" value="address">
+                              <select name="nation" id="nation" class="form-control w-100" style="display: block;">
+                                   <option value="testOne">Test One</option>
+                                   <option value="testTwo">Test Two</option>
+                                   <option value="testThree">Test Three</option>
+                              </select>
+                              <div class="form-group d-flex gap-md-1 row-md-col">
+                                   <input type="number" class="form-control" placeholder="Postal Code" name="postalCode">
+                                   <input type="text" class="form-control" placeholder="City" name="city">
+                                   <input type="text" class="form-control" placeholder="State" name="state">
+                              </div>
+                              <input type="text" class="form-control" placeholder="Phone number" name="phoneNumber">
+                         </div>
+                         <input type="submit" class="fill_btn w-100" value="Submit">
+                    </form>
+               </div>
+               <div class="confirm information">
+                    <div class="process-container">
+                         <div class="circle">3</div>
+                    </div>
+                    <form action="#" class="confirm-form">
+                         <h2 class="form-header">Confirmation</h2>
+                         <p>Please confirm your review your order and confirm.</p>
+                         <input type="submit" class="fill_btn w-100" value="Purchase">
+                    </form>
+               </div>
+          </div>
+          <div class="right cart w-50">
+               <h2>Cart</h2>
+               <div class="list-container">
+                    <div class="item">
+                         <div class="item-info">
+                              <img src="./vendor/images/pdf.jpg" alt="">
+                              <span class="item-name">Lorem ipsum dnsectetur adipisicing.</span>
+                              <span class="price">$100.00</span>
+                         </div>
+                         <button class="remove-btn" id="removeCartBtn">Remove</button>
+                    </div>
+                    <div class="item">
+                         <div class="item-info">
+                              <img src="./vendor/images/pdf.jpg" alt="">
+                              <span class="item-name">Lorem ipsum dolor sit amet. Loronsectetur adipisicing.</span>
+                              <span class="price">$100.00</span>
+                         </div>
+                         <button class="remove-btn" id="removeCartBtn">Remove</button>
+                    </div>
+                    <div class="item">
+                         <div class="item-info">
+                              <img src="./vendor/images/pdf.jpg" alt="">
+                              <span class="item-name">Lorem ipsum dolo adipisicing.</span>
+                              <span class="price">$100.00</span>
+                         </div>
+                         <button class="remove-btn" id="removeCartBtn">Remove</button>
+                    </div>
+               </div>
+               <div class="total-container">
+                    <div class="sub-container pale">
+                         <span>Subtotal</span>
+                         <span>$ 100.00</span>
+                    </div>
+                    <div class="sub-container pale">
+                         <span>Tax</span>
+                         <span>$ 00.00</span>
+                    </div>
+                    <div class="sub-container main">
+                         <span>Total</span>
+                         <span>$ 100.00</span>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+</body>
+<!-- Fontawesome Logo Link -->
+<script src="https://kit.fontawesome.com/9d8e63c428.js" crossorigin="anonymous"></script>
+</html>
