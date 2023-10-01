@@ -21,6 +21,18 @@ section{
 }
 
 /* Components */
+.w-25{
+     width: 25%;
+}
+.w-50{
+     width: 50%;
+}
+.w-75{
+     width: 75%;
+}
+.w-100{
+     width: 100%;
+}
 /* Flex */
 .d-flex{
      display: flex;
@@ -219,6 +231,15 @@ section{
      padding: 1rem;
 }
 /* Sign up form */
+
+/* Cart Button */
+.cart-btn{
+     position: fixed;
+     padding: 1rem;
+     right: var(--side-ruler);
+     bottom: var(--side-ruler);
+     font-size: 1rem;
+}
 
 /* RESPONSIVE */
 @media screen and (max-width: 890px) {

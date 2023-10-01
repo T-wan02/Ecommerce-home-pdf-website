@@ -23,9 +23,10 @@
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     margin-top: 1rem;
 }
 .list-container .item .item-name{
+     font-family: 'Merriweather', serif;
+     margin: .8rem;
      font-size: 1.5rem;
      font-weight: 400;
      text-align: center;
